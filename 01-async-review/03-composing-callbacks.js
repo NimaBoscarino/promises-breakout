@@ -6,6 +6,7 @@
 
 // But if these thigns are ASYNCHRONOUS...
 
+// this funciton accepts a callback...
 fetchCatFromInternet(
     (data) => storeInDatabase(
         data,

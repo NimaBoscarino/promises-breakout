@@ -17,3 +17,6 @@ const promise3 = () => new Promise((resolve, reject) => {
         resolve('Wooow a value!')
     }, 500)
 })
+
+Promise.race([promise1, promise2, promise3])
+    .then((value) => console.log(value)) // the first promise to resolve wins!

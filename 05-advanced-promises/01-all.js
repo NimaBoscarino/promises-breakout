@@ -17,3 +17,6 @@ const promise3 = () => new Promise((resolve, reject) => {
         resolve('Wooow a value!')
     }, 500)
 })
+
+Promise.all([promise1, promise2, promise3])
+    .then(([value1, value2, value3]) => console.log(value1, value2, value3))
